@@ -3,24 +3,13 @@ import {
   StackedCarousel,
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
+import Updates from "../services/updatesService";
 
 
-export const data = [
-  {
-    cover: "assets/images/carousel.jpg",
-    title: "Interstaller",
-  },
-  {
-    cover: "assets/images/carousel.jpg",
-    title: "Interstaller",
-  },
-  {
-    cover: "assets/images/carousel.jpg",
-    title: "Interstaller",
-  },
-  
+export const data = Updates;
 
-];
+
+
 
 
 export default function ResponsiveCarousel(props) {

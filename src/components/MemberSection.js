@@ -1,5 +1,5 @@
 import React from "react";
-import Member from "../services/memberService";
+import Member from "../Services/memberService";
 
 const MemberSection = () => {
 

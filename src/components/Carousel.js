@@ -3,7 +3,7 @@ import {
   StackedCarousel,
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
-import Updates from "../services/updatesService";
+import Updates from "../Services/updatesService";
 
 
 export const data = Updates;

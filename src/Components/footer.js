@@ -65,7 +65,7 @@ const Footer = () => {
         <img
           src={YtuSM}
           alt="YTU Logo"
-          className="h-auto sm:hidden max-sm:w-24"
+          className="h-auto sm:hidden max-sm:w-10"
         />
       </div>
     </footer>

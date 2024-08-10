@@ -25,12 +25,12 @@ const Header = () => {
         <img
           src={Ytu}
           alt="YTU Logo"
-          className="lg:w-52 md:w-40 sm:w-32 max-sm:hidden h-auto"
+          className="lg:w-64 md:w-48 sm:w-40 max-sm:hidden h-auto"
         />
         <img
           src={YtuSM}
           alt="YTU Logo"
-          className="sm:hidden max-sm:w-24 h-auto"
+          className="sm:hidden max-sm:w-10 h-auto"
         />
       </div>
       <div className="absolute lg:bottom-[-55px] md:bottom-[-40px] sm:bottom-[-37px] max-sm:hidden border border-white rounded-full">

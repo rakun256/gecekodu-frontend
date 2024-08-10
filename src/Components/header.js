@@ -7,8 +7,8 @@ import SkylabSM from "../Images/skylab-uzun-logo-sm.png";
 
 const Header = () => {
   return (
-    <header className="relative w-full h-full lg:py-7 md:py-5 sm:py-3 max-sm:py-2 bg-[#ffffff20] backdrop-blur-md flex flex-col items-center justify-center">
-      <div className="flex items-center justify-between m-auto w-full px-8">
+    <header className="relative w-full h-full lg:py-7 md:py-5 sm:py-3 max-sm:py-2 bg-[#ffffff20] backdrop-blur-md flex flex-col items-center justify-center px-8 max-sm:px-4">
+      <div className="flex items-center justify-between w-full">
         <img
           src={Skylab}
           alt="SKY LAB Logo"

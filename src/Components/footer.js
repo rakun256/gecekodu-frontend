@@ -11,7 +11,7 @@ const Footer = () => {
   const location = Locations[0];
 
   return (
-    <footer className="bottom-0 bg-[#00000080] text-white px-8 g:py-7 md:py-5 sm:py-3 max-sm:py-3 w-full h-full">
+    <footer className="bottom-0 bg-[#00000080] text-white px-8 max-sm:px-4 g:py-7 md:py-5 sm:py-3 max-sm:py-3 w-full h-full">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex">
           <div className="flex flex-col justify-between space-y-3 lg:text-xl md:text max-sm:text">

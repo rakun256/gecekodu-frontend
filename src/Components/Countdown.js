@@ -17,13 +17,6 @@ export default function Countdown({ targetDate }) {
 
   const hour12 = 12 * hour;
 
-  //   const startCountdownTimer = (date) => {
-  //     updateCountdown(date);
-  //     countdownTimer = setInterval(() => {
-  //       updateCountdown(date);
-  //     }, 1000);
-  //   };
-
   useEffect(() => {
     let countdownTimer;
 
@@ -58,14 +51,6 @@ export default function Countdown({ targetDate }) {
 
     return () => clearInterval(countdownTimer);
   }, [targetDate]);
-
-  //   useEffect(() => {
-  //     // Set the countdown date here, e.g., 1 day from now
-  //     const targetDate = new Date().getTime() + day;
-  //     startCountdownTimer(targetDate);
-
-  //     return () => clearInterval(countdownTimer);
-  //   }, []);
 
   return (
     <div

@@ -1,15 +1,15 @@
 import Countdown from "./Countdown";
-import CurrDate from "./CurrentDate";
+import EventDate from "./EventDate";
 import Timelines from "../Services/timelineService";
-import NextEvents from "./NextEvents";
+import NextEventsList from "./NextEventsList";
 
 export default function Timeline() {
   const { nextEventDate, nextEventActivities } = Timelines;
   return (
-    <div className="flex flex-col gap-10 justify-center items-center">
-      <CurrDate targetDate={nextEventDate} />
+    <div className="flex flex-col lg:gap-10 md:gap-8 sm:gap-6 gap-5 justify-center items-center">
+      <EventDate targetDate={nextEventDate} />
       <Countdown targetDate={nextEventDate} />
-      <NextEvents nextEvents={nextEventActivities} />
+      <NextEventsList nextEvents={nextEventActivities} />
     </div>
   );
 }

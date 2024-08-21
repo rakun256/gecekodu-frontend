@@ -54,7 +54,7 @@ export default function Countdown({ targetDate }) {
 
   return (
     <div
-      className={`text-xl lg:text-4xl md:text-3xl sm:text-2xl text-white font-bold rounded-3xl bg-[#006D1F] px-3 py-1 sm:px-3 sm:py-2 md:px-[0.9rem] md:py-[0.6rem] lg:px-4 lg:py-3 flex justify-center items-center gap-3  ${
+      className={`text-xl lg:text-4xl md:text-3xl sm:text-2xl text-white font-bold rounded-3xl bg-[#006D1F] px-3 py-1 sm:px-3 sm:py-2 md:px-[0.9rem] md:py-[0.6rem] lg:px-4 lg:py-3 flex justify-center items-center gap-3 ${
         isAnimate ? " animate-dance" : ""
       }`}
     >

@@ -23,7 +23,7 @@ export default function ResponsiveCarousel(props) {
           // This is because ResponsiveContainer will not render the carousel before its parent's width is determined
           // parentWidth is determined after your parent component mounts. Thus if you set the ref directly it will not work since the carousel is not rendered
           // Thus you need to pass your ref object to the ResponsiveContainer as the carouselRef prop and in your render function you will receive this ref object
-          let currentVisibleSlide = 5;
+          let currentVisibleSlide = 3;
           if (parentWidth <= 1440) currentVisibleSlide = 3;
           if (parentWidth <= 1080) currentVisibleSlide = 1;
           return (

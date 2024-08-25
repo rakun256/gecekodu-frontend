@@ -5,7 +5,6 @@ export default function Countdown({ targetDate }) {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
   });
 
   const [isAnimate, setIsAnimate] = useState(false);
@@ -54,37 +53,31 @@ export default function Countdown({ targetDate }) {
 
   return (
     <div
-      className={`text-xl lg:text-4xl md:text-3xl sm:text-2xl text-white font-bold rounded-3xl bg-[#006D1F] px-3 py-1 sm:px-3 sm:py-2 md:px-[0.9rem] md:py-[0.6rem] lg:px-4 lg:py-3 flex justify-center items-center gap-3 ${
-        isAnimate ? " animate-dance" : ""
+      className={`text-xl lg:text-4xl md:text-3xl sm:text-2xl text-white font-bold rounded-3xl bg-[#ffffff20] px-3 py-1 sm:px-3 sm:py-2 md:px-[0.9rem] md:py-[0.6rem] lg:px-4 lg:py-3 flex justify-center items-center gap-3 fixed-size ${
+        isAnimate ? "animate-dance" : ""
       }`}
     >
       <div
         className={`flex gap-2 delay-1s ${isAnimate ? "animate-updown" : ""}`}
       >
         <p className="">{timeLeft.days}</p>
-        <p>gun</p>
+        <p>Gün</p>
       </div>
 
       <div
         className={`flex gap-2 delay-2s ${isAnimate ? "animate-updown" : ""}`}
       >
         <p>{timeLeft.hours}</p>
-        <p>saat</p>
+        <p>Saat</p>
       </div>
 
       <div
         className={`flex gap-2 delay-3s ${isAnimate ? "animate-updown" : ""}`}
       >
         <p>{timeLeft.minutes}</p>
-        <p>dakika</p>
+        <p>Dakika</p>
       </div>
 
-      <div
-        className={`flex gap-2 delay-4s ${isAnimate ? "animate-updown" : ""}`}
-      >
-        <p>{timeLeft.seconds}</p>
-        <p>saniye</p>
-      </div>
     </div>
   );
 }

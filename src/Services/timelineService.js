@@ -1,5 +1,5 @@
 const Timeline = {
-  nextEventDate: "2024-08-23T19:00:00",
+  nextEventDate: "2026-08-23T19:00:00",
   nextEventActivities: [
     { team: "Team Alpha", activityName: "Coding Workshop" },
     { team: "Team Beta", activityName: "Networking Event" },

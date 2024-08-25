@@ -1,14 +1,23 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 import Skylab from "../Images/skylab-uzun-logo.png";
 import SkylabSM from "../Images/skylab-uzun-logo-sm.png";
 import Ytu from "../Images/yildiz-logo.png";
 import YtuSM from "../Images/yildiz-logo-sm.png";
 import Locations from "../Services/locationService";
+import customPin from "../Images/custom-pin.png"; // Add your custom pin image here
 
 const Footer = () => {
   const location = Locations[0];
+
+  // Define custom icon
+  const customIcon = new L.Icon({
+    iconUrl: customPin,
+    iconSize: [24, 38], // Adjust the size as needed
+    iconAnchor: [19, 38], // Adjust the anchor point as needed
+  });
 
   return (
     <footer className="bottom-0 bg-[#00000080] text-white px-8 max-sm:px-4 g:py-7 md:py-5 sm:py-3 max-sm:py-3 w-full h-full">
@@ -28,16 +37,17 @@ const Footer = () => {
                 zoom={15}
                 scrollWheelZoom={false}
                 style={{ height: "100%", width: "100%" }}
+                attributionControl={false} // Disable attribution control
               >
                 <TileLayer
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
                 <Marker
                   position={[
                     location.coordinates.lat,
                     location.coordinates.lng,
                   ]}
+                  icon={customIcon} // Use custom icon
                 >
                   <Popup>{location.name}</Popup>
                 </Marker>

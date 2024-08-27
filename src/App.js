@@ -3,7 +3,7 @@ import Footer from "./Components/footer";
 import Header from "./Components/header";
 import "./index.css";
 import LandingPage from "./Pages/landingPage";
-import MemberPage from "./Pages/memberPage";
+//import MemberPage from "./Pages/memberPage";
 
 function App() {
   return (

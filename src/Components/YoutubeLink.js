@@ -9,7 +9,7 @@ export default function YoutubeLink() {
     >
       <div className="bg-[#FF0000] text-white font-bold rounded-3xl flex justify-center items-center gap-2 lg:px-5 lg:py-2 md:px-4 px-3 py-1 hover:scale-110 active:scale-100 hover:cursor-pointer transition-all text-lg lg:text-3xl md:text-2xl sm:text-xl">
         <img src={youtube} alt="youtube logo" className="w-1/4" />
-        <span className="w-full">YTU SKYLAB</span>
+        <span className="w-full">ytuskylab</span>
       </div>
     </a>
   );
